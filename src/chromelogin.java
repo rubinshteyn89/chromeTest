@@ -1,5 +1,3 @@
-import static org.junit.Assert.*;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -26,7 +24,7 @@ public class chromelogin {
 		driver.findElement(By.id("gb_70")).click();
 		driver.findElement(By.id("identifierId")).sendKeys(LOGINID);
 		driver.findElement(By.id("identifierNext")).click();
-		driver.findElement(By.name("password"))..sendKeys(PASS)
+		driver.findElement(By.name("password")).sendKeys(PASS);
 		driver.findElement(By.id("passwordNext")).click();
 		driver.close();
 	}
