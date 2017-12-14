@@ -18,6 +18,8 @@ public class chromelogin {
 	public void testValidLogin() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\n.karayev\\Documents\\chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver","/resources/chromedriver.exe");
+		//set path like this:
+		// ~/chromeTest/src/resources/chromedriver.exe
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.google.com");
