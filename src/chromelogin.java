@@ -24,7 +24,7 @@ public class chromelogin {
 		driver.findElement(By.id("gb_70")).click();
 		driver.findElement(By.id("identifierId")).sendKeys(LOGINID);
 		driver.findElement(By.id("identifierNext")).click();
-		driver.findElement(By.name("password")).sendKeys(PASS);
+		driver.findElement(By.Xpath("//*[@id='password']/div[1]/div/div[1]/input")).sendKeys(PASS);
 		driver.findElement(By.id("passwordNext")).click();
 		driver.close();
 	}
